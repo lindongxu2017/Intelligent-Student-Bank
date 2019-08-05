@@ -24,18 +24,31 @@
 			return {
 				link: [					
 					{name: '首页', path: '/'},
-					{name: '学员库', path: '/'},
-					{name: '师资力量', path: '/'},
+					{name: '学员库', path: '/student'},
+					{name: '师资力量', path: '/teach'},
 					{name: '机构特色', path: '/'},
-					{name: '联系我们', path: '/'}
+					{name: '联系我们', path: '/contact'}
 				],
 				active: 0
 			}
+		},
+		mounted() {
+			this.highlight()
 		},
 		methods: {
 			route (item, index) {
 				this.active = index
 				this.$router.push({path: item.path})
+			},
+			highlight () {
+				let path = this.$route.path
+				console.log(path)
+				for (var i = 0; i < this.link.length; i++) {
+					if (path == this.link[i].path) {
+						this.active = i
+						break
+					}
+				}
 			}
 		}
 	}

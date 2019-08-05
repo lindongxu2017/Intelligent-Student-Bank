@@ -4,6 +4,8 @@
 		<sectionTwo></sectionTwo>
 		<sectionThree></sectionThree>
 		<sectionFour></sectionFour>
+		<sectionFive></sectionFive>
+		<sectionSix></sectionSix>
 	</div>
 </template>
 
@@ -12,6 +14,8 @@
 	import sectionTwo from '@/components/section_2.vue'
 	import sectionThree from '@/components/section_3.vue'
 	import sectionFour from '@/components/section_4.vue'
+	import sectionFive from '@/components/section_5.vue'
+	import sectionSix from '@/components/section_6.vue'
 	export default {
 		
 		name: 'index',
@@ -21,7 +25,7 @@
 			}
 		},
 		components: {
-			sectionOne, sectionTwo, sectionThree, sectionFour
+			sectionOne, sectionTwo, sectionThree, sectionFour, sectionFive, sectionSix
 		}
 	}
 </script>

@@ -136,7 +136,7 @@
 		-webkit-align-items: center;
 		align-items: center;
 		transition: 300ms;
-		transform: scale(0.9) translateY(-14px);
+		transform: scale(0.9) translateY(-25px);
 	}
 
 	.swiper-slide-active,
